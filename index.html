@@ -13,6 +13,14 @@
         background-color: #8a8a8a;
       }
 
+      #downloadSlide {
+        margin-top:15vh;
+      }
+
+      #fullpage .section, #downloadSlide {
+        padding-left: 0px;
+      }
+
       .img-slide {
         max-width: 100%;
         height: 98vh;
@@ -33,13 +41,23 @@
       @media (max-width: 576px) {
         .img-slide {
           height: auto;
+          margin: 0.6vh;
         }
         .btn-paypal {
           margin-top: 0px;
         }
       }
 
-      @media (min-width: 576px) and (max-width: 1199.98px) {
+      @media (min-width: 577px) {
+        #fullpage .section, #downloadSlide {
+          padding-left: 0px;
+        }
+        .container-fluid {
+          padding-left: 1vh;
+        }
+      }
+
+      @media (min-width: 577px) and (max-width: 1199.98px) {
         .btn-paypal {
           margin-right: -47vw;
           margin-bottom: 2vh;
@@ -57,10 +75,6 @@
           margin-right: -38vw;
           margin-bottom: 2vh;
         }
-        
-        body {
-          overflow: hidden;
-        }
       }
     </style>
 
@@ -76,55 +90,104 @@
   </head>
   <body>
 
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <div id="carouselSlide" class="carousel slide" data-ride="carousel" data-keyboard="true" data-interval="false">
-              <div class="carousel-inner">
-                <div class="carousel-item text-center active">
-                  <img class="img-slide" src="slide-sm-0.png" alt="Primeiro slide">
-                </div>
-                <div class="carousel-item text-center">
-                  <img class="img-slide" src="slide-sm-1.png" alt="Segundo slide">
-                </div>
-                <div class="carousel-item text-center">
-                  <img class="img-slide" src="slide-sm-2.png" alt="Terceiro slide">
-                </div>
-                <div class="carousel-item text-center">
-                  <img class="img-slide" src="slide-sm-3.png" alt="Quarto slide">
-                </div>
-                <div class="carousel-item text-center">
-                  <img class="img-slide" src="slide-sm-4.png" alt="Quinto slide">
-                </div>
-                <div class="carousel-item text-center">
-                  <img class="img-slide" src="slide-sm-5.png" alt="Sexto slide">
-                </div>
-                <div class="carousel-item text-center">
-                  <img class="img-slide" src="slide-sm-6.png" alt="Sétimo slide">
-                </div>
-                <div class="carousel-item text-center">
-                  <img class="img-slide" src="slide-sm-7.png" alt="Último slide"><br>
-                  <!--<a class="btn btn-lg btn-info btn-paypal" href="https://paypal.com" target="_blank"><i class="fab fa-paypal" aria-hidden="true"></i> Pagar via Paypal</a>-->
-                </div>
-              </div>
-              <a class="carousel-control-prev carousel-control" href="#carouselSlide" role="button" data-slide="prev">
-                <i class="fas fa-angle-left" aria-hidden="true"></i></span>
-                <span class="sr-only">Anterior</span>
-              </a>
-              <a class="carousel-control-next carousel-control" href="#carouselSlide" role="button" data-slide="next">
-                <i class="fas fa-angle-right" aria-hidden="true"></i></span>
-                <span class="sr-only">Próximo</span>
-              </a>
+    <article class="container-fluid">
+        <div id="downloadSlide" class="col-12 d-md-none text-center">
+          <a class="btn btn-sm btn-light" href="TexasBrazil.pdf" download><i class="fas fa-download"></i> Fazer download deste slide</a>
+        </div>
+        <div id="scrollinfo" class="text-center mt-4 fixed-top">
+          <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
+            <div class="alert alert-secondary"><i class="fas fa-info"></i> deslize para baixo ou use a tecla <i class="fas fa-arrow-down"></i></div>
           </div>
         </div>
-        <div class="col-12 d-md-none text-center mt-2">
-          <a class="btn btn-light" href="TexasBrazil.pdf" download><i class="fas fa-download"></i> Fazer download deste slide</a>
+      <div id="fullpage" class="row">
+        <div data-anchor="slide0" class="col-12 section text-center">
+          <img class="img-slide slide" src="slide-sm-0.png" alt="Primeiro slide">
+        </div>
+        <div data-anchor="slide1" class="col-12 section text-center">
+          <img class="img-slide slide" src="slide-sm-1.png" alt="Segundo slide">
+        </div>
+        <div data-anchor="slide2" class="col-12 section text-center">
+          <img class="img-slide slide" src="slide-sm-2.png" alt="Terceiro slide">
+        </div>
+        <div data-anchor="slide3" class="col-12 section text-center">
+          <img class="img-slide slide" src="slide-sm-3.png" alt="Quarto slide">
+        </div>
+        <div data-anchor="slide4" class="col-12 section text-center">
+          <img class="img-slide slide" src="slide-sm-4.png" alt="Quinto slide">
+        </div>
+        <div data-anchor="slide5" class="col-12 section text-center">
+          <img class="img-slide slide" src="slide-sm-5.png" alt="Sexto slide">
+        </div>
+        <div data-anchor="slide6" class="col-12 section text-center">
+          <img class="img-slide slide" src="slide-sm-6.png" alt="Sétimo slide">
+        </div>
+        <div data-anchor="slide7" class="col-12 section text-center">
+          <img class="img-slide slide" src="slide-sm-7.png" alt="Último slide"><br>
+          <!--<a class="btn btn-lg btn-info btn-paypal" href="https://paypal.com" target="_blank"><i class="fab fa-paypal" aria-hidden="true"></i> Pagar via Paypal</a>-->
         </div>
       </div>
+    </article>
+
+    <div id="goTop" class="fixed-bottom text-right mb-4 mr-4" style="display: none;">
+      <a class="btn btn-lg btn-dark" href="#slide0"><i class="fas fa-arrow-up"></i></a>
     </div>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.0.3/dist/fullpage.min.js" integrity="sha256-4VFRzLdhQSYy5IunDjgMh0wA8nP7sm5JMs/3mbvptJs=" crossorigin="anonymous"></script>
+
+    <script>
+
+      var hideDownloadSlide = function() {
+        document.getElementById('downloadSlide').style = 'display:none';
+      }
+
+      var hideScrollinfo = function(){
+        document.getElementById('scrollinfo').style = 'display:none';
+      }
+
+      var hideGoTop = function() {
+        document.getElementById('goTop').style = 'display:none';
+      }
+
+      var showDownloadSlide = function() {
+        document.getElementById('downloadSlide').style = 'display:block';
+      }
+
+      var showScrollinfo = function(){
+        document.getElementById('scrollinfo').style = 'display:block';
+      }
+
+      var showGoTop = function() {
+        document.getElementById('goTop').style = 'display:block';
+      }
+
+      var myFullpage = new fullpage('#fullpage', {
+        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE', 
+        animateAnchor: false,
+        onLeave: function(origin, destination, direction){
+
+          if (destination.index===0) {
+            showDownloadSlide();
+            showScrollinfo();
+            hideGoTop();
+          }
+
+          if (destination.index > 0) {
+            hideScrollinfo();
+            hideDownloadSlide();
+            showGoTop();
+          }
+
+        }
+      });
+
+      function goToTop(){
+        myFullpage.moveTo(0);
+      }
+
+    </script>
+
   </body>
 </html>
