@@ -1,83 +1,24 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt">
+
   <head>
+
     <meta charset="utf-8">
-    <meta name="theme-color" content="#8a8a8a">
+    <meta name="theme-color" content="#00259e">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
+    <meta name="description" content="Missão para investidores qualificados que buscam opção para proteção de patrimônio e possível diversificação de investimento no mercado norte-americano americano">
+
     <title>Texas Brazil - Oportunidades para Empreendedores e Investidores</title>
-    <meta description="Missão para investidores qualificados que buscam opção para proteção de patrimônio e possível diversificação de investimento no mercado norte-americano americano">
-    
-    <style>
-      body {
-        background-color: #8a8a8a;
-      }
 
-      #downloadSlide {
-        margin-top:15vh;
-      }
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-      #fullpage .section, #downloadSlide {
-        padding-left: 0px;
-      }
+    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-      .img-slide {
-        max-width: 100%;
-        height: 98vh;
-        margin: 1vh;
-        box-shadow: 1px 1px 10px #636363
-      }
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-      .carousel-control {
-        font-size: 5em;
-        color: #fff;
-      }
-
-      .btn-paypal {
-        margin-top: -13vh;
-        width: 280px;
-       }
-
-      @media (max-width: 576px) {
-        .img-slide {
-          height: auto;
-          margin: 0.6vh;
-        }
-        .btn-paypal {
-          margin-top: 0px;
-        }
-      }
-
-      @media (min-width: 577px) {
-        #fullpage .section, #downloadSlide {
-          padding-left: 0px;
-        }
-        .container-fluid {
-          padding-left: 1vh;
-        }
-      }
-
-      @media (min-width: 577px) and (max-width: 1199.98px) {
-        .btn-paypal {
-          margin-right: -47vw;
-          margin-bottom: 2vh;
-        }
-      }
-
-      @media (min-width: 1200px) and (max-width: 1399.98px) {
-        .btn-paypal {
-          margin-right: -60vw;
-          margin-bottom: 2vh;
-        }
-      }
-      @media (min-width: 1400px) {
-        .btn-paypal {
-          margin-right: -38vw;
-          margin-bottom: 2vh;
-        }
-      }
-    </style>
+    <link href="css/creative.min.css" rel="stylesheet">
 
     <script type="application/ld+json">
       {
@@ -89,106 +30,548 @@
     </script>
 
   </head>
-  <body>
 
-    <article class="container-fluid">
-        <div id="downloadSlide" class="col-12 d-md-none text-center">
-          <a class="btn btn-sm btn-light" href="TexasBrazil.pdf" download><i class="fas fa-download"></i> Fazer download deste slide</a>
-        </div>
-        <div id="scrollinfo" class="text-center mt-4 fixed-top">
-          <div class="col-12 col-md-6 offset-md-3 col-lg-4 offset-lg-4">
-            <div class="alert alert-secondary"><i class="fas fa-info"></i> deslize para baixo ou use a tecla <i class="fas fa-arrow-down"></i></div>
-          </div>
-        </div>
-      <div id="fullpage" class="row">
-        <div data-anchor="slide0" class="col-12 section text-center">
-          <img class="img-slide slide" src="slide-sm-0.png" alt="Primeiro slide">
-        </div>
-        <div data-anchor="slide1" class="col-12 section text-center">
-          <img class="img-slide slide" src="slide-sm-1.png" alt="Segundo slide">
-        </div>
-        <div data-anchor="slide2" class="col-12 section text-center">
-          <img class="img-slide slide" src="slide-sm-2.png" alt="Terceiro slide">
-        </div>
-        <div data-anchor="slide3" class="col-12 section text-center">
-          <img class="img-slide slide" src="slide-sm-3.png" alt="Quarto slide">
-        </div>
-        <div data-anchor="slide4" class="col-12 section text-center">
-          <img class="img-slide slide" src="slide-sm-4.png" alt="Quinto slide">
-        </div>
-        <div data-anchor="slide5" class="col-12 section text-center">
-          <img class="img-slide slide" src="slide-sm-5.png" alt="Sexto slide">
-        </div>
-        <div data-anchor="slide6" class="col-12 section text-center">
-          <img class="img-slide slide" src="slide-sm-6.png" alt="Sétimo slide">
-        </div>
-        <div data-anchor="slide7" class="col-12 section text-center">
-          <img class="img-slide slide" src="slide-sm-7.png" alt="Último slide"><br>
-          <!--<a class="btn btn-lg btn-info btn-paypal" href="https://paypal.com" target="_blank"><i class="fab fa-paypal" aria-hidden="true"></i> Pagar via Paypal</a>-->
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top section-0" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Texas Brazil</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#sobre">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#agenda">Agenda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#local">Local</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contato">Contato</a>
+            </li>
+          </ul>
         </div>
       </div>
-    </article>
+    </nav>
 
-    <div id="goTop" class="fixed-bottom text-right mb-4 mr-4" style="display: none;">
-      <a class="btn btn-lg btn-dark" href="#slide0"><i class="fas fa-arrow-up"></i></a>
-    </div>
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.0.3/dist/fullpage.min.js" integrity="sha256-4VFRzLdhQSYy5IunDjgMh0wA8nP7sm5JMs/3mbvptJs=" crossorigin="anonymous"></script>
+    <header id="home" class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <h1 class="text-uppercase">
+              <strong>Estados Unidos da América</strong>
+            </h1>
+            <hr>
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">Oportunidades para Empreendedores e Investidores</p>
+            <a class="btn btn-primary btn-xl js-scroll-trigger" href="#sobre">Saiba mais</a>
+          </div>
+        </div>
+      </div>
+    </header>
 
-    <script>
+    <section class="bg-dark section-1" id="sobre">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-4 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h2 class="text-center">Objetivo</h2>
+                <p class="lead p-3">
+                  Criar um network de confiança e real valor para investidores e empreendedores com foco em investimento, 
+                  expansão e/ou diversificação de seus negócios e ativos nos Estados Unidos
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 mb-3">
+              <div class="card">
+                  <div class="card-body">
+                    <h2 class="text-center">Meios</h2>
+                    <p class="lead p-3">
+                      Introdução e apresentação de conteúdos práticos por profissionais e experientes de empresas renomadas 
+                      nas áreas imobiliária, financeira, novos negócios e imigração<br><br>
+                    </p>
+                  </div>
+                </div>
+          </div>
+          <div class="col-12 col-lg-4 mb-3">
+              <div class="card">
+                  <div class="card-body">
+                    <h2 class="text-center">Resultado</h2>
+                    <p class="lead p-3">
+                      Empreendedores e investidores brasileiros construirão relacionamentos de confiança e obterão o conhecimento 
+                      básico para investir nos Estados Unidos ao seu tempo desejado
+                    </p>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      var hideDownloadSlide = function() {
-        document.getElementById('downloadSlide').style = 'display:none';
-      }
+    <section id="agenda">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+              <i class="fas fa-4x fa-calendar-alt text-primary sr-icon-1"></i>
+            <h2 class="section-heading text-primary mt-2">Agenda</h2>
+            <hr class="my-4">
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        
+        <div class="row">
+          <div class="col-12">
+            <div class="card bg-primary mb-5">
+              <div class="card-header text-right text-white">
+                <h3>Segunda-feira, 03</h3>
+              </div>
+              <div class="card-body">
+              <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <div class="card mt-2 mb-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6 text-left">
+                            9:00 am
+                          </div>
+                          <div class="col-6 text-right">
+                            <img src="img/br.png" alt="Brasil">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 py-3">
+                            <strong>EUA como plataforma de investimento global</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="card mt-2 mb-3">
+                      <div class="card-body">
+                        <div class="row">
+                          <div class="col-6 text-left">
+                            10:30 am
+                          </div>
+                          <div class="col-6 text-right">
+                            <img src="img/br.png" alt="Brasil">
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-12 py-3">
+                            <strong>Investimentos financeiros nos EUA</strong>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <div class="card mt-2 mb-3">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6 text-left">
+                              2:00 pm
+                            </div>
+                            <div class="col-6 text-right">
+                              <i class="fas fa-headset"></i>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 py-3">
+                              <strong>O mercado de renda variável nos EUA</strong>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="card mt-2 mb-3">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6 text-left">
+                              3:30 pm
+                            </div>
+                            <div class="col-6 text-right">
+                              <img src="img/br.png" alt="Brasil">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 py-3">
+                              <strong>Imigração com vistos EB-2</strong>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-12">
+              <div class="card bg-primary mb-5">
+                <div class="card-header text-right text-white">
+                  <h3>Terça-feira, 04</h3>
+                </div>
+                <div class="card-body">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <div class="card mt-2 mb-3">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6 text-left">
+                              9:00 am
+                            </div>
+                            <div class="col-6 text-right">
+                              <img src="img/br.png" alt="Brasil">
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 py-3">
+                              <strong>Vistos para empreendedores</strong>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="card mt-2 mb-3">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6 text-left">
+                              10:30 am
+                            </div>
+                            <div class="col-6 text-right">
+                              <i class="fas fa-headset"></i>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 py-3">
+                              <strong>O estado do Texas para empreendedores</strong>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12 col-lg-6">
+                        <div class="card mt-2 mb-3">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-6 text-left">
+                                2:00 pm
+                              </div>
+                              <div class="col-6 text-right">
+                                <img src="img/br.png" alt="Brasil">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 py-3">
+                                <strong>Outsourcing para operações de negócio</strong>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6">
+                        <div class="card mt-2 mb-3">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-6 text-left">
+                                3:30 pm
+                              </div>
+                              <div class="col-6 text-right">
+                                <img src="img/br.png" alt="Brasil">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 py-3">
+                                <strong>Oportunidades em compra e locação de imóveis</strong>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
 
-      var hideScrollinfo = function(){
-        document.getElementById('scrollinfo').style = 'display:none';
-      }
+        <div class="row">
+            <div class="col-12">
+              <div class="card bg-primary mb-5">
+                <div class="card-header text-right text-white">
+                  <h3>Quarta-feira, 05</h3>
+                </div>
+                <div class="card-body">
+                <div class="row">
+                    <div class="col-12 col-lg-6">
+                      <div class="card mt-2 mb-3">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6 text-left">
+                              9:00 am
+                            </div>
+                            <div class="col-6 text-right">
+                              <i class="fas fa-headset"></i>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 py-3">
+                              <strong>Investimentos em imóveis comerciais</strong>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="card mt-2 mb-3">
+                        <div class="card-body">
+                          <div class="row">
+                            <div class="col-6 text-left">
+                              10:30 am
+                            </div>
+                            <div class="col-6 text-right">
+                              <i class="fas fa-headset"></i>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-12 py-3">
+                              <strong>Oportunidades em franquias nos EUA</strong>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-12 col-lg-6">
+                        <div class="card mt-2 mb-3">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-6 text-left">
+                                2:00 pm
+                              </div>
+                              <div class="col-6 text-right">
+                                <i class="fas fa-headset"></i>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 py-3">
+                                <strong>Investimentos em master franchise</strong>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-lg-6">
+                        <div class="card mt-2 mb-3">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-6 text-left">
+                                3:30 pm
+                              </div>
+                              <div class="col-6 text-right">
+                                <i class="fas fa-headset"></i>
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-12 py-3">
+                                <strong>Criando e mantendo sua companhia nos EUA</strong>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
 
-      var hideGoTop = function() {
-        document.getElementById('goTop').style = 'display:none';
-      }
+        <div class="row">
+            <div class="col-12">
+              <div class="card bg-primary mb-5">
+                <div class="card-header text-right text-white">
+                  <h3>Quinta-feira, 06</h3>
+                </div>
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-12">
+                      <div class="card">
 
-      var showDownloadSlide = function() {
-        document.getElementById('downloadSlide').style = 'display:block';
-      }
+                        <div class="card-body mb-3">
+                          <div class="row">
+                            <div class="col-12 text-center"><img src="img/small-business-expo.jpg" alt="Small Business expo" class="img-fluid"></div>
+                          </div>
+                          <div class="row mt-3">
+                            <div class="col-12 col-lg-6 mb-3">
+                              <img src="img/expo/expo-01.jpg" class="float-left" alt="Exhibitor Hall">
+                              <div class="card expo-item">
+                                <div class="card-body">
+                                  <h5 style="font-weight: bold">Exhibitor Hall</h5>
+                                  <p>Discover 100s of vendors and shop for products and services that can help your business thrive.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <img src="img/expo/expo-02.jpg" class="float-left" alt="B2B Networking">
+                                <div class="card expo-item">
+                                  <div class="card-body">
+                                    <h5 style="font-weight: bold">B2B Networking</h5>
+                                    <p>Meet and connect with like-minded entrepreneurs in an open and inspirational atmosphere.</p>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
 
-      var showScrollinfo = function(){
-        document.getElementById('scrollinfo').style = 'display:block';
-      }
+                          <div class="row mt-3">
+                            <div class="col-12 col-lg-6 mb-3">
+                              <img src="img/expo/expo-03.jpg" class="float-left" alt="Workshops">
+                              <div class="card expo-item">
+                                <div class="card-body">
+                                  <h5 style="font-weight: bold">Workshops</h5>
+                                  <p>
+                                    Participate in 45-minute interactive seminars on a variety of small-business-related
+                                    topics led by industry experts.
+                                  </p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <img src="img/expo/expo-04.jpg" class="float-left" alt="The Main Stage">
+                                <div class="card expo-item">
+                                  <div class="card-body">
+                                    <h5 style="font-weight: bold">The Main Stage</h5>
+                                    <p>A dedicated space for presentations from the best of the best in their industry. Not something to miss!</p>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
 
-      var showGoTop = function() {
-        document.getElementById('goTop').style = 'display:block';
-      }
+                          <div class="row mt-3">
+                            <div class="col-12 col-lg-6 mb-3">
+                              <img src="img/expo/expo-05.jpg" class="float-left" alt="Speed Networking">
+                              <div class="card expo-item">
+                                <div class="card-body">
+                                  <h5 style="font-weight: bold">Speed Networking</h5>
+                                  <p>Organized, fast-paced networking where you'll meet minded people, exchange information and discuss strategy.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-lg-6 mb-3">
+                                <img src="img/expo/expo-06.jpg" class="float-left" alt="...">
+                                <div class="card expo-item">
+                                  <div class="card-body">
+                                    <h5 style="font-weight: bold">Business Card Exchange</h5>
+                                    <p>Add your business card and marketing materials to an industry-centric table, share your information and find new contacts.</p>
+                                  </div>
+                                </div>
+                              </div>
+                          </div>
 
-      var myFullpage = new fullpage('#fullpage', {
-        licenseKey: 'OPEN-SOURCE-GPLV3-LICENSE', 
-        animateAnchor: false,
-        onLeave: function(origin, destination, direction){
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
 
-          if (destination.index===0) {
-            showDownloadSlide();
-            showScrollinfo();
-            hideGoTop();
-          }
+      </div>
+    </section>
 
-          if (destination.index > 0) {
-            hideScrollinfo();
-            hideDownloadSlide();
-            showGoTop();
-          }
+    <section class="bg-dark" id="local">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center mb-4">
+                <i class="fas fa-4x fa-map text-white sr-icon-1"></i>
+              <h2 class="section-heading text-white mt-2">Local</h2>
+              <hr class="my-4">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-6">
+              <img src="img/location-1.jpg" alt="Local" class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-6 text-white">
+              <p class="lead">
+                Home2 Suites By Hilton Austin
+                <br><br>
+                2800 Esperanza Crossing
+                <br><br>
+                Austin Texas 78758
+                <br><br>
+              </p>
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe class="embed-responsive-item" width="600" height="450" frameborder="0" style="border:0" 
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB6N6_7UuiF1kZ95-9vSiNJfUlgSKMgIDA&q=Home2+Suites+by+Hilton+Austin+North,+Austin,+TX,+USA" allowfullscreen>
+                </iframe>
 
-        }
-      });
+            </div>
+          </div>
+        </div>
+    </section>
 
-      function goToTop(){
-        myFullpage.moveTo(0);
-      }
+    <section id="contato" style="background-color:#5e5e5e">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 col-lg-6 mb-3">
+              <img src="img/location-2.jpg" alt="Local" class="img-fluid">
+            </div>
+            <div class="col-12 col-lg-6 text-white">
+              <h4>Promoção:</h4>
+              <p class="lead">
+                GovernanceChain
+              </p>
+              <h4>Apoio:</h4>
+              <p class="lead">
+                4USBiz<br><br>
+              </p>
+              <h4>Contato:</h4>
+              <p class="lead">
+                missao@texasbrazil.org <br>
+                +1 512 888-6811 (WhatsApp) Luiz
+              </p>
+              <h4>Investimento:</h4>
+              <p class="lead">
+                USD 29990
+                <br><br>
+                Não incluso passagens aéreas e alimentação
+                <br><br>
+              </p>
+              <p class="text-center mt-5">
+                  <img src="img/paypal.jpg" alt="paypal">
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
 
-    </script>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <script src="js/creative.min.js"></script>
 
   </body>
+
 </html>
